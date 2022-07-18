@@ -1,10 +1,15 @@
-import { axios } from 'axios';
-import { useState, useEffect } from 'react';
-
 function App () {
   return (
-    <div className="bg-dark text-white">
-      <h1>Hello World!</h1>
+    <div>
+      <h4>Rutas disponibles</h4>
+      <p>Estudiantes</p>
+      <p>Estudiantes/id</p>
+      <p>Materias</p>
+      <p>Materias/id</p>
+      <p>Facultades</p>
+      <p>Facultades/id</p>
+      <p>Profesores</p>
+      <p>Profesores/id</p>
     </div>
   );
 }
