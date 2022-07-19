@@ -12,7 +12,7 @@ export function Profesor() {
       async function fetchData() {
         const { data } = await axios({
           method: "get",
-          url: `https://cors-anywhere.herokuapp.com/https://tarea7-backend.herokuapp.com/profesor/${idProfesor}`,
+          url: `https://tarea7-backend.herokuapp.com/profesor/${idProfesor}`,
         });
         setData(data);
         console.log(data);
@@ -46,7 +46,7 @@ export function Profesores() {
       async function fetchData() {
         const { data } = await axios({
           method: "get",
-          url: `https://cors-anywhere.herokuapp.com/https://tarea7-backend.herokuapp.com/profesor`,
+          url: `https://tarea7-backend.herokuapp.com/profesor`,
         });
         setData(data);
         console.log(data);
@@ -65,7 +65,7 @@ export function Profesores() {
         <h1>Lista de Profesores</h1>
         <div className="row">
           {data.map((profesor) => (
-            <div className="col-md-4 text-center p-5">
+            <div className="col-md-4 text-center p-5" key={profesor.id}>
               <p>Nombre: {profesor.nombre}</p>
               <p>Apellido: {profesor.apellido}</p>
               <p>Id de Facultad: {profesor.facultad_id}</p>

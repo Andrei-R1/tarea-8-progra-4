@@ -12,7 +12,7 @@ export function Facultad() {
       async function fetchData() {
         const { data } = await axios({
           method: "get",
-          url: `https://cors-anywhere.herokuapp.com/https://tarea7-backend.herokuapp.com/facultad/${idFacultad}`,
+          url: `https://tarea7-backend.herokuapp.com/facultad/${idFacultad}`,
         });
         setData(data);
         console.log(data);
@@ -46,7 +46,7 @@ export function Facultades() {
       async function fetchData() {
         const { data } = await axios({
           method: "get",
-          url: `https://cors-anywhere.herokuapp.com/https://tarea7-backend.herokuapp.com/facultad`,
+          url: `https://tarea7-backend.herokuapp.com/facultad`,
         });
         setData(data);
         console.log(data);

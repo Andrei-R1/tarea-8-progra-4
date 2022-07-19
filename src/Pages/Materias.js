@@ -12,7 +12,7 @@ export function Materia() {
       async function fetchData() {
         const { data } = await axios({
           method: "get",
-          url: `https://cors-anywhere.herokuapp.com/https://tarea7-backend.herokuapp.com/materia/${idMateria}`,
+          url: `https://tarea7-backend.herokuapp.com/materia/${idMateria}`,
         });
         setData(data);
         console.log(data);
@@ -49,7 +49,7 @@ export function Materias() {
       async function fetchData() {
         const { data } = await axios({
           method: "get",
-          url: `https://cors-anywhere.herokuapp.com/https://tarea7-backend.herokuapp.com/materia`,
+          url: `https://tarea7-backend.herokuapp.com/materia`,
         });
         setData(data);
         console.log(data);

@@ -12,7 +12,7 @@ export function Estudiante() {
       async function fetchData() {
         const { data } = await axios({
           method: "get",
-          url: `https://cors-anywhere.herokuapp.com/https://tarea7-backend.herokuapp.com/estudiante/${idEstudiante}`,
+          url: `https://tarea7-backend.herokuapp.com/estudiante/${idEstudiante}`,
         });
         setData(data);
         console.log(data);
@@ -51,7 +51,7 @@ export function Estudiantes() {
       async function fetchData() {
         const { data } = await axios({
           method: "get",
-          url: `https://cors-anywhere.herokuapp.com/https://tarea7-backend.herokuapp.com/estudiante`,
+          url: `https://tarea7-backend.herokuapp.com/estudiante`,
         });
         setData(data);
         console.log(data);
